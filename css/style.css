@@ -1,8 +1,7 @@
 html{
     height: 100%;
 }
-body{
-    padding: 1em 0 ;
+.body-dark{
     height: 100%;
     display: flex;
     align-items: center;
@@ -12,12 +11,31 @@ body{
     background-color: black;
     color: white;
     font-family: monospace;
+    transition: 1s all ease;
+}
+.body-white{
+    transition: 1s all ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    font-family: monospace;
 }
 .range{
     width: 20em;
 }
 p{
     font-size: 1.5em;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
 }
 .input-backgroundcolor{
    width: 20em;
@@ -26,5 +44,42 @@ p{
 .square{
     width: 10em;
     height: 10em;
+}
+.square-dark{
     border: 1px solid white;
+    
+}
+.square-white{
+    border: 1px solid black;
+
+}
+button{
+    margin: 1em ;
+}
+.black-theme-button{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 0.5em;
+    font-size: 2em;
+    font-family: monospace;
+    border-radius: 10px; 
+    transition: all 1s ease;
+}
+.black-theme-button:active{
+    transition: all 0s ease;
+    background-color: rgb(83, 83, 83);
+}
+.white-theme-button{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5em;
+    font-size: 2em;
+    font-family: monospace;
+    border-radius: 10px; 
+    transition: all 1s ease;
+}
+.white-theme-button:active{
+    background-color: rgb(187, 187, 187);
 }
