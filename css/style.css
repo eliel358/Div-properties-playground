@@ -9,20 +9,22 @@ body{
     justify-content: start;
     margin: 0;
     flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: monospace;
 }
 .range{
     width: 20em;
 }
+p{
+    font-size: 1.5em;
+}
 .input-backgroundcolor{
    width: 20em;
    min-height: 5em;
-
-}
-.conteiner{
-
 }
 .square{
     width: 10em;
     height: 10em;
-    border: 1px solid black;
+    border: 1px solid white;
 }
