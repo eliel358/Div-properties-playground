@@ -1,7 +1,9 @@
 html{
     height: 100%;
+    width: 100%;
 }
 body{
+    width: 100%;
     padding: 5em;
     height: 100%;
     display: flex;
