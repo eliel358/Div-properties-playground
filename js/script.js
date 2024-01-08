@@ -3,6 +3,36 @@ square.style.width = String(document.getElementById('range-width').value*0.25)+'
 square.style.height = String(document.getElementById('range-height').value*0.25)+'em'
 square.style.rotate = 0
 theme = 'dark'
+document.getElementById('range-box-shadow-1').value = 0
+document.getElementById('range-box-shadow-2').value = 0
+document.getElementById('range-box-shadow-3').value = 0
+document.getElementById('range-box-shadow-4').value = 0
+
+setBoxShadow =()=>{
+    square.style.boxShadow = String(document.getElementById('range-box-shadow-1').value)+ 'px '+
+    String(document.getElementById('range-box-shadow-2').value)+ 'px '+
+    String(document.getElementById('range-box-shadow-3').value)+ 'px '+
+    String(document.getElementById('range-box-shadow-4').value)+ 'px '+
+    String(document.getElementById('input-shadow-backgroundcolor').value)
+    console.log(square.style.boxShadow)
+}
+
+document.getElementById('input-shadow-backgroundcolor').addEventListener('change',function(){
+    setBoxShadow()
+})
+
+document.getElementById('range-box-shadow-1').addEventListener('input',function(){
+    setBoxShadow()
+})
+document.getElementById('range-box-shadow-2').addEventListener('input',function(){
+    setBoxShadow()
+})
+document.getElementById('range-box-shadow-3').addEventListener('input',function(){
+    setBoxShadow()
+})
+document.getElementById('range-box-shadow-4').addEventListener('input',function(){
+    setBoxShadow()
+})
 
 document.getElementById('range-width').addEventListener('input',function(){
     square.style.width = String(document.getElementById('range-width').value*0.25)+'em'

@@ -34,7 +34,7 @@ p{
 nav{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
 }
 .input-backgroundcolor{
@@ -44,14 +44,6 @@ nav{
 .square{
     width: 10em;
     height: 10em;
-}
-.square-dark{
-    border: 1px solid white;
-    
-}
-.square-white{
-    border: 1px solid black;
-
 }
 button{
     margin: 1em ;
@@ -83,3 +75,29 @@ button{
 .white-theme-button:active{
     background-color: rgb(187, 187, 187);
 }
+.square-dark{
+    border: 1px solid white;
+    
+}
+.square-white{
+    border: 1px solid black;
+}
+.grid{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.propertie-conteiner{
+    margin: 1em;
+    display: flex;
+    width: fit-content;
+    text-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 0.2em;
+}
+
